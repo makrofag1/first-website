@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" 
+			name="viewport" 
+			content="width=device-width, initial-scale=1.0">
+	<title>Maślak</title>
+
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			background-image: url(background.jpg);
+			background-color: rgba(252, 252, 255,0.97);
+			background-blend-mode: lighten;
+			background-position: center; /* Center the image */
+			background-repeat: no-repeat; /* Do not repeat the image */
+			background-size: cover; /* Resize the background image to cover the entire container */
+		}
+
+		p{
+			font-family: "Lucida Console", Courier, monospace;		
+		}
+
+		h1{
+			font-family: "Lucida Console", Courier, monospace;
+		}
+
+		li{
+			font-family: "Lucida Console", Courier, monospace;
+			font-size: 1em;
+			padding-bottom: 1em;
+		}
+
+		
+		.layout-orientation{
+			display: flex;
+			min-width: 15em;
+		}
+
+		.left-background{
+			width: 25%;
+			border: 1px solid;
+		}
+
+		.right-background{
+			width: 25%;
+			border: 1px solid;
+		}
+
+		.main-content{
+			/*box-sizing: border-box;*/
+			border: 1px solid;
+			padding: 2vw;
+			height: 100%;
+		}
+
+		.main-header{
+			display: flex;
+			width: 100%;
+			height: 20%;
+		}
+
+		.table-of-contents{
+			/*box-sizing: border-box;*/
+			width: 40%;
+			align-items: stretch;
+			border: 1px solid;
+			padding-left: 1vw;
+			padding-right: 1vw;
+		}
+
+		.image{
+			width: 60%;
+			height: 100%;
+			/*border: 1px solid;*/
+			align-items: stretch;
+			
+		}
+
+		.section{
+			/*margin-top: 5vw;*/
+			word-wrap: break-word;
+			padding: 2vw;
+
+		}
+
+		.icon{
+			width: 100%;
+			height: 100%;
+		}
+
+		.wrapper{
+			padding: 5%;
+			width: 100%;
+			height: 100%;
+			/*box-sizing: border-box; */
+		}
+		.section-wrapper{
+			margin-top: 5vw;
+			width: 100%;
+		}
+
+
+
+		@media only screen and (max-width: 750px) {
+			.left-background{
+				width: 0%;
+			}
+			.right-background{
+				width: 0%;
+			}
+			.main-content{
+				width: 100%;
+				height: 100%;
+			}
+			.main-header{
+				display: block;
+			}
+			.table-of-contents{
+				/*box-sizing: border-box;*/
+				width: 100%;
+				height: 50%;
+				/*border: 1px solid;*/
+				padding-left: 1vw;
+			}
+
+			.image{
+				width: 100%;
+				height: 50%;
+				/*border: 1px solid;*/
+				
+			}
+		}
+
+		/* Extra small devices (phones, 600px and down) */
+		/*@media only screen and (min-width: 500px) {
+			.left-background{
+				width: 10%;
+			}
+			.right-background{
+				width: 10%;
+			}
+			.main-content{
+				width: 80%;
+			}
+		}*/
+
+		/* Small devices (portrait tablets and large phones, 600px and up) */
+		@media only screen and (min-width: 750px) {
+			.left-background{
+				width: 13%;
+			}
+			.right-background{
+				width: 13%;
+			}
+			.main-content{
+				width: 74%;
+			}
+		}
+
+		/* Medium devices (landscape tablets, 768px and up) */
+		@media only screen and (min-width: 1000px) {
+			.left-background{
+				width: 20%;
+			}
+			.right-background{
+				width: 20%;
+			}
+			.main-content{
+				width: 60%;
+			}
+		}
+
+		/* Large devices (laptops/desktops, 992px and up) */
+		@media only screen and (min-width: 1300px) {
+			.left-background{
+				width: 22%;
+			}
+			.right-background{
+				width: 22%;
+			}
+			.main-content{
+				width: 56%;
+			}
+		}
+
+		/* Extra large devices (large laptops and desktops, 1200px and up) */
+		@media only screen and (min-width: 1600px) {
+			.left-background{
+				width: 25%;
+			}
+			.right-background{
+				width: 25%;
+			}
+			.main-content{
+				width: 50%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="page-container" class="layout-orientation">
+		<div id="left-background" class="left-background">
+			lewe tło
+		</div>
+
+		<main id="main-content" class="main-content">
+
+			<div id="main-header" class="main-header">
+				<div id="table-of-contents" class="table-of-contents">
+					<h1>Spis treści</h1>
+					<ul>
+						<li><a href="#systematyka">Systematyka i nazewnictwo</a></li> 
+						<li><a href="#morfologia">Morfologia</a></li> 
+						<li><a href="#wystepowanie">Występowanie i siedlisko</a></li> 
+						<li><a href="#znaczenie">Znaczenie</a></li> 
+					</ul>
+				</div>
+
+				<div id="image" class="image">
+					<div id="wrapper" class="wrapper">
+						<img src="240px-Suillus_luteus_2.jpg" alt="Grzyb" class="icon">
+					</div>
+				</div>
+			</div>
+
+			<div class="section-wrapper">
+				<div id="section" class="section">
+
+					<h1 id="systematyka">Systematyka i nazewnictwo</h1>
+					<p>
+						Pozycja w klasyfikacji według Index Fungorum: Suillus, Suillaceae, Boletales, Agaricomycetidae, Agaricomycetes, Agaricomycotina, Basidiomycota, Fungi[1].<br>
+						<br>
+						Po raz pierwszy takson ten zdiagnozował w 1753 r. Karol Linneusz nadając mu nazwę Boletus luteus. Obecną, uznaną przez Index Fungorum nazwę nadał mu w 1806 r. Henri François Anne de Roussel, przenosząc go do rodzaju Suillus[1].<br>
+					</p>
+					<hr>
+
+					<h1 id="morfologia">Morfologia</h1>
+					<p>
+						Kapelusz<br>
+						Średnica 4–12 cm, ciemnobrązowy, czekoladowobrązowy, czasami żółtobrązowy. Na młodych grzybach półkulisty, potem spłaszczony, szeroki. Skórka promieniście żyłkowana, lepka i błyszcząca, w czasie suszy wyschnięta. Daje się łatwo oddzielić od miąższu[5].
+						<br><br>
+						Rurki<br>
+						Długość 6–12 mm, cytrynowożółte rurki, u młodych owocników zakryte białą, błoniastą osłoną częściową. U osobników dorosłych resztki tej osłony pozostają na trzonie w postaci białofioletowego, przyrośniętego pierścienia. Pory rurek początkowo okrągławe, na starszych okazach kanciaste[6].
+						<br><br>
+						Trzon<br>
+						Wysokość 3–11 cm, grubość 1–2,5 cm, walcowaty, twardy i pełny. Jest jasnożółty, na górnej części występują brązowe ziarenka. Bardzo charakterystyczną cechą jest występowanie na trzonie skórkowatego pierścienia. Po tym można go rozróżnić od bardzo podobnego maślaka ziarnistego, który nie ma tego pierścienia[5].
+						<br><br>
+						Miąższ<br>
+						Początkowo twardy, potem miękki. Ma biało-żółtawy kolor koloru, i tylko w dole trzony jest lekko brązowy. Smak i zapach przyjemny[5].
+						<br><br>
+						Wysyp zarodników<br>
+						Rdzawo-ochrowy. Zarodniki gładkie, elipsoidalne, o rozmiarach 7–11 × 2,5 –4 μm[7].
+					</p>
+					<hr>
+
+					<h1 id="wystepowanie">Występowanie i siedlisko</h1>
+					<p>
+						Jest szeroko rozprzestrzeniony. Występuje na całej półkuli północnej na obszarach o klimacie umiarkowanym, a także w Ameryce Południowej, Australii i na Nowej Zelandii[8]. W Polsce jest bardzo pospolity[9].<br>
+
+						Rośnie w lasach iglastych, głównie pod sosnami, gdyż współżyje z ich korzeniami – zjawisko mikoryzy[4]. Często występuje w młodnikach sosnowych[9]. Występuje od maja do jesieni, ale przy ciepłej jesieni i późnej zimie znajdowano dorodne osobniki w połowie grudnia.<br>
+					</p>
+					<hr>
+
+					<h1 id="znaczenie">Znaczenie</h1>
+					<p>
+						Grzyb mikoryzowy[3]. Smaczny grzyb jadalny. Nadaje się do duszenia, smażenia i marynowania, może też być przyrządzony w każdy właściwy dla grzybów sposób. Skórkę z kapelusza należy usunąć przed spożyciem (jest kwaśna)[4]. Można go przyrządzać bez ściągania skórki, jednakże bez niej potrawy są bardziej apetyczne, ponadto jej ściągnięcie ułatwia dobre oczyszczenie kapeluszy z ziemi, igliwia itp. W rzadkich przypadkach zdarzały się objawy nietolerancji niektórych ludzi na maślaki, objawiające się wymiotami i biegunką. Z tego powodu wskazane jest przed pierwszym spożyciem maślaków dokonać próby polegającej na spożyciu tylko niewielkiej ich ilości[9].<br>
+					</p>
+				</div>
+			</div>
+
+			
+			
+		</main>
+
+		<div id="right-background" class="right-background">
+			prawe tło
+		</div>
+	</div>
+	
+</body>
+</html>
